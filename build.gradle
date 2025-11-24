@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.5'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    set('selenium.version', '4.21.0') // 사용할 Selenium 버전을 여기에 명시
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.seleniumhq.selenium:selenium-java'
+
+    // Jsoup 라이브러리 추가
+    implementation 'org.jsoup:jsoup:1.17.2'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'commons-io:commons-io:2.11.0'
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    implementation 'io.github.bonigarcia:webdrivermanager:5.9.1'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
