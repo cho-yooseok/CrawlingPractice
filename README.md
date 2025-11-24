@@ -6,7 +6,7 @@
 
 ---
 
-## 📋 목차
+##  목차
 
 - [프로젝트 개요](#프로젝트-개요)
 - [시스템 아키텍처](#시스템-아키텍처)
@@ -20,7 +20,7 @@
 
 ---
 
-## 🎯 프로젝트 개요
+##  프로젝트 개요
 
  온라인 쇼핑몰의 가방 카테고리 상품 정보를 자동으로 수집하고 관리하는 크롤링 시스템입니다.
 
@@ -48,7 +48,7 @@
 
 ---
 
-## 🏗 시스템 아키텍처
+##  시스템 아키텍처
 
 ### 전체 아키텍처
 
@@ -132,7 +132,7 @@ PENDING → PROCESSING → COMPLETED → PARSED → IMAGE_DOWNLOADED
 
 ---
 
-## 🛠 기술 스택
+##  기술 스택
 
 ### Backend
 - **Spring Boot 3.2.5** - 웹 애플리케이션 프레임워크
@@ -157,7 +157,7 @@ PENDING → PROCESSING → COMPLETED → PARSED → IMAGE_DOWNLOADED
 
 ---
 
-## 🎮 주요 기능
+##  주요 기능
 
 ### 1. 스크롤 기반 URL 수집
 - 무한 스크롤 페이지 자동 탐색
@@ -193,7 +193,7 @@ PENDING → PROCESSING → COMPLETED → PARSED → IMAGE_DOWNLOADED
 
 ---
 
-## 📚 API 명세서
+##  API 명세서
 
 ### Swagger UI 접속
 ```
@@ -332,7 +332,7 @@ http.download.proxies=               # Proxy 목록 (콤마 구분)
 
 ---
 
-## 🚀 설치 및 실행
+##  설치 및 실행
 
 ### 사전 요구사항
 - **Java 17 이상**
@@ -392,7 +392,7 @@ http.download.jitter.max.ms=1200
 
 ---
 
-## 📁 프로젝트 구조
+##  프로젝트 구조
 
 ```
 src/main/java/com/example/gugusnewcrawling/
@@ -417,7 +417,7 @@ src/main/java/com/example/gugusnewcrawling/
 
 ---
 
-## 💡 학습 내용
+##  학습 내용
 
 이 프로젝트를 통해 학습한 주요 내용들입니다.
 
@@ -471,7 +471,7 @@ src/main/java/com/example/gugusnewcrawling/
 
 ---
 
-## ⚠️ 주의사항
+##  주의사항
 
 **과도한 요청 방지**: Rate limiting을 준수하여 서버에 부하를 주지 마세요.
 
@@ -479,14 +479,14 @@ src/main/java/com/example/gugusnewcrawling/
 
 ---
 
-## 📝 라이선스
+##  라이선스
 
 이 프로젝트는 **개인 학습 목적**으로 작성되었습니다.  
 상업적 용도로 사용하지 마세요.
 
 ---
 
-## 🔗 참고 자료
+##  참고 자료
 
 - [Spring Boot 공식 문서](https://spring.io/projects/spring-boot)
 - [Selenium 공식 문서](https://www.selenium.dev/documentation/)
@@ -525,7 +525,7 @@ src/main/java/com/example/gugusnewcrawling/
 ![alt text](<5 작업현황.png>)
 
 
-6. mysql 결과화면
+6. mysql 결과화면    
 ![alt text](<msyql 결과화면1 .png>)
 
 ![alt text](<mysql 결과화면2.png>)
